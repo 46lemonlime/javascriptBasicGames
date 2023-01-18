@@ -1,0 +1,5 @@
+TODO:
+piedra papel tijera basico
+Posible iplementacion de vidas 'x' hasta perder y cambio de elementos por algo mas interesante: (pokemon, elementos, razas magicas... etc)
+
+- de ser pokemon un concepto interesante seria usar los pokemon iniciales (fuego, agua, planta) y al ganar que evolucionen y sean capaces de ganar en una situacion perdedora
