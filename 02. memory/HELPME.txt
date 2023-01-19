@@ -1,0 +1,4 @@
+TODO:
+Memory
+- Agregar un temporizador para tener el resultado del tiempo en terminar
+- estilizar interfaz
