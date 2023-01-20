@@ -6,9 +6,11 @@ const startButton = document.getElementById("start-button");
 
 let result = 0;
 let hitPosition;
-let currentTime = 10;
-let countDownTimerId = setInterval(countDown, 1000);
+let countDownTimerId;
+let currentTime = 60;
 let timerId = null;
+scoreDisplay.innerHTML = 0;
+timeLeftDisplay.innerHTML = 60 + "s";
 
 //Creates mole
 function randomSquare() {
@@ -40,7 +42,7 @@ squares.forEach((square) => {
 //Count down timer
 function countDown() {
   currentTime--;
-  timeLeftDisplay.textContent = currentTime;
+  timeLeftDisplay.textContent = currentTime + "s";
 
   if (currentTime == 0) {
     clearInterval(countDownTimerId);
@@ -52,5 +54,5 @@ function countDown() {
 //start game
 startButton.addEventListener("click", (e) => {
   moveMole();
-  countDown();
+  countDownTimerId = setInterval(countDown, 1000);
 });

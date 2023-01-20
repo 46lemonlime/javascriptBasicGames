@@ -1,0 +1,3 @@
+- agregar funciones para restablecer todo al acabar
+- agregar dificultades (mas velocidad)
+- agregar un record scoreboard
