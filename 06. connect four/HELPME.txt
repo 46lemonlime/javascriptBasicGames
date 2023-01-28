@@ -1,0 +1,12 @@
+JAVASCRIPT methods and property to learn in this proyect:
+.querySelector()
+.querySelectorAll()
+.length
+addEventListene()
+.classList.contain()
+.classList.add()
+.innerHTML
+.onclick
+aler()
+***************************************************
+GAME IMPROVEMENTS:
