@@ -77,6 +77,34 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let currentPlayer = 1;
 
+  //check for win
+  function checkWin() {
+    //looping over the winning arrays
+    for (let y = 0; y < winningArrays.length; y++) {
+      const square1 = squares[winningArrays[y][0]];
+      const square2 = squares[winningArrays[y][1]];
+      const square3 = squares[winningArrays[y][2]];
+      const square4 = squares[winningArrays[y][3]];
+      //check if the winning array matches taken by the same player
+      if (
+        square1.classList.contains("player-one") &&
+        square2.classList.contains("player-one") &&
+        square3.classList.contains("player-one") &&
+        square4.classList.contains("player-one")
+      ) {
+        result.innerHTML = "Player One Wins";
+      }
+      if (
+        square1.classList.contains("player-two") &&
+        square2.classList.contains("player-two") &&
+        square3.classList.contains("player-two") &&
+        square4.classList.contains("player-two")
+      ) {
+        result.innerHTML = "Player Two Wins";
+      }
+    }
+  }
+
   // Players moves
   for (let i = 0; i < squares.length; i++) {
     squares[i].onclick = () => {
@@ -97,34 +125,7 @@ document.addEventListener("DOMContentLoaded", () => {
           displayCurrentPlayer.innerHTML = currentPlayer;
         }
       } else alert("cant go here");
+      checkWin();
     };
-  }
-
-  //check for win
-  function checkWin() {
-    //looping over the winning arrays
-    for (let y = 0; y < winningArrays.length; y++) {
-      const square1 = squares[winningArrays[y][0]];
-      const square2 = squares[winningArrays[y][1]];
-      const square3 = squares[winningArrays[y][2]];
-      const square4 = squares[winningArrays[y][3]];
-    }
-    //check if the winning array matches taken by the same player
-    if (
-      square1.classList.contains("player-one") &&
-      square2.classList.contains("player-one") &&
-      square3.classList.contains("player-one") &&
-      square4.classList.contains("player-one")
-    ) {
-      result.innerHTML = "Player One Wins";
-    }
-    if (
-      square1.classList.contains("player-two") &&
-      square2.classList.contains("player-two") &&
-      square3.classList.contains("player-two") &&
-      square4.classList.contains("player-two")
-    ) {
-      result.innerHTML = "Player Two Wins";
-    }
   }
 });
