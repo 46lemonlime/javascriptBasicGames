@@ -1,12 +1,18 @@
+CREDITS: 
+https://www.youtube.com/watch?v=ec8vSKJuZTk&ab_channel=ChrisCourses
+https://github.com/kubowania/connect-four
+
+********************************************************************
 JAVASCRIPT methods and property to learn in this proyect:
 .querySelector()
 .querySelectorAll()
 .length
-addEventListene()
+.addEventListener()
 .classList.contain()
 .classList.add()
 .innerHTML
 .onclick
-aler()
-***************************************************
+alert()
+********************************************************************
+
 GAME IMPROVEMENTS:

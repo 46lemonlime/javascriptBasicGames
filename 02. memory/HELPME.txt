@@ -1,3 +1,23 @@
+CREDITS: 
+https://www.youtube.com/watch?v=ec8vSKJuZTk&ab_channel=ChrisCourses
+https://github.com/kubowania/memory-game
+
+********************************************************************
+JAVASCRIPT methods and property to learn in this proyect:
+.querySelector()
+.querySelectorAll()
+.length
+.createElement()
+.setAttribute()
+.getAttribute()
+.append()
+.push()
+.setTimeout()
+.removeEventListener()
+.textContent
+alert()
+********************************************************************
+
 TODO:
 Memory
 - Agregar un temporizador para tener el resultado del tiempo en terminar

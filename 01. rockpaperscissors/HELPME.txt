@@ -1,3 +1,19 @@
+CREDITS: 
+https://www.youtube.com/watch?v=ec8vSKJuZTk&ab_channel=ChrisCourses
+https://github.com/kubowania/rock-paper-scissors-x3
+
+********************************************************************
+JAVASCRIPT methods and property to learn in this proyect:
+.getElementById()
+.querySelectorAll()
+.forEach()
+.addEventListener()
+.innerHTML
+.Math.floor()
+.Math.random()
+e.target.id
+********************************************************************
+
 TODO:
 piedra papel tijera basico
 Posible iplementacion de vidas 'x' hasta perder y cambio de elementos por algo mas interesante: (pokemon, elementos, razas magicas... etc)

@@ -1,0 +1,23 @@
+CREDITS: 
+https://www.youtube.com/watch?v=ec8vSKJuZTk&ab_channel=ChrisCourses
+https://github.com/kubowania/space-invaders
+
+********************************************************************
+JAVASCRIPT methods and property to learn in this proyect:
+.querySelector()
+.querySelectorAll()
+.createElement()
+.appendChild()
+.length
+.includes()
+.classList.add()
+.classList.remove()
+.classList.contains()
+.innerHTML
+setTimeout()
+switch()
+e.key
+setInterval()
+clearInterval()
+Array.from()
+********************************************************************

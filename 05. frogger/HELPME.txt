@@ -1,3 +1,24 @@
+CREDITS: 
+https://www.youtube.com/watch?v=ec8vSKJuZTk&ab_channel=ChrisCourses
+https://github.com/kubowania/Frogger
+
+********************************************************************
+JAVASCRIPT methods and property to learn in this proyect:
+.querySelector()
+.querySelectorAll()
+.classList.add()
+.classList.remove()
+.classList.contains()
+.addEventListener()
+.removeEventListener()
+.forEach()
+.textContent
+setInterval()
+clearInterval()
+switch()
+e.key
+********************************************************************
+
 change logs (l1,l2,l3) for img of log in 3 20px*20px sections
 change frog for img
 change car for 20*20px img

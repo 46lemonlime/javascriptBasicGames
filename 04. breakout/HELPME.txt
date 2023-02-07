@@ -1,2 +1,31 @@
+CREDITS: 
+https://www.youtube.com/watch?v=ec8vSKJuZTk&ab_channel=ChrisCourses
+https://github.com/kubowania/breakout
+
+********************************************************************
+JAVASCRIPT methods and property to learn in this proyect:
+.querySelector()
+.bottomLeft
+.bottomRight
+.topLeft
+.topRight
+.classList.add()
+.classList.remove()
+.createElement()
+.style.left
+.style.bottom
+.appendChild()
+.removeEventListener()
+.length
+.splice()
+Array.from()
+switch()
+setInterval()
+clearInterval()
+classListconstructor
+this
+e.key
+********************************************************************
+
 - corregir trayectoria del change direction para que sea mas correcta
 anadir niveles de dificultad ( velocidad, tamano de user, etc)

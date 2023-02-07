@@ -1,3 +1,23 @@
+CREDITS: 
+https://www.youtube.com/watch?v=ec8vSKJuZTk&ab_channel=ChrisCourses
+https://github.com/kubowania/whac-a-mole
+
+********************************************************************
+JAVASCRIPT methods and property to learn in this proyect:
+.querySelector()
+.querySelectorAll()
+.forEach()
+.classList.add()
+.classList.remove()
+.Math.floor()
+.Math.random()
+.addEventListener()
+.setInterval()
+clearInterval
+.textContent
+.id
+********************************************************************
+
 - agregar funciones para restablecer todo al acabar
 - agregar dificultades (mas velocidad)
 - agregar un record scoreboard
