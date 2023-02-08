@@ -1,6 +1,17 @@
 const grid = document.querySelector(".grid");
 const resultsDisplay = document.getElementById("result");
 const scoreDisplay = document.getElementById("score");
+const throttle = (fn, delay) => {
+  let lastCalled = 0;
+  return (...args) => {
+    let now = new Date().getTime();
+    if (now - lastCalled < delay) {
+      return;
+    }
+    lastCalled = now;
+    return fn(...args);
+  };
+};
 let width = 15;
 let currentShooterIndex = 202;
 let invadersDirection = 1;
@@ -106,9 +117,21 @@ function moveInvaders() {
 invadersId = setInterval(moveInvaders, 500);
 
 function shoot(e) {
+  if (e.repeat) return;
   let laserId;
   let currentLaserIndex = currentShooterIndex;
   function moveLaser() {
+    if (currentLaserIndex <= 14) {
+      squares[currentLaserIndex].classList.remove("laser");
+      clearInterval(laserId);
+      return;
+    }
+    console.log(currentLaserIndex, currentLaserIndex - width);
+    const nextLaserIndex = currentLaserIndex - width;
+    if (!squares[currentLaserIndex] && !squares[nextLaserIndex]) {
+      clearInterval(laserId);
+      return;
+    }
     squares[currentLaserIndex].classList.remove("laser");
     currentLaserIndex -= width;
     squares[currentLaserIndex].classList.add("laser");
@@ -136,5 +159,5 @@ function shoot(e) {
       laserId = setInterval(moveLaser, 100);
   }
 }
-
+const s = throttle(shoot, 500);
 document.addEventListener("keydown", shoot);
